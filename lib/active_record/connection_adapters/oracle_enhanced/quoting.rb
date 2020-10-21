@@ -123,6 +123,8 @@ module ActiveRecord
             else
               value
             end
+          when BigDecimal
+            value
           when Type::OracleEnhanced::NationalCharacterString::Data
             value.to_s
           when Type::OracleEnhanced::CharacterString::Data
